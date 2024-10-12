@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>basic JS: BMI</title>
+  <style>
+    .inputsection {
+      width: 33%;
+      background-color: aquamarine;
+    }
+    .outputsection {
+      width: 33%;
+      background-color: salmon;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h3>Welcome มาตรวจสอบสุขภาพกัน ด้วยค่าBMI</h3>
+    </div>
+  </header>
+  <br>
+  <section>
+    <div class="inputsection">
+      <p>กรุณาใส่ข้อมูลตามช่องด้านล่าง แล้วกดปุ่ม"คำนวณ"</p>
+      <p>นำ้หนัก (กิโลกรัม)</p>
+      <input type="text" id="weight">
+      <p>ส่วนสูง (เซนติเมตร)</p>
+      <input type="text" id="height">
+      <p></p>
+      <button id="btn" onclick="evaBMI()">
+        คำนวณ
+      </button>
+    </div>
+  </section>
+  <br>
+  <section>
+    <div class="outputsection">
+      แสดงผล
+      <p></p>
+      <div id="result"></div>
+      <div id="eva"></div>
+    </div>
+  </section>
+  <div></div>
+  <script src="./bmi.js"></script>
+</body>
+</html>
